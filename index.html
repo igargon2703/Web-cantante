@@ -1,11 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eladio Carrión - Web Oficial</title>
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="img/portada.jpg">
+    <!-- Hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#" class="nav-link active">Home</a></li>
+            <li><a href="#" class="nav-link">Biography</a></li>
+            <li><a href="#" class="nav-link">Albums</a></li>
+            <li><a href="#" class="nav-link">On Tour</a></li>
+            <li><a href="#" class="nav-link">Merch</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+    </nav>
+
+    <!-- SECCIÓN HERO -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">Él te puede cantar, te puede boxear.</p>
+            <h1>ELADIO CARRIÓN</h1>
+            <p class="slogan">MUSIC. CULTURE. REAL.</p>
+            <button class="btn btn-light">Listen Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-spotify"></i></a>
+            <a href="#"><i class="fa-brands fa-apple"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN SEGUNDARIA (CLARA) -->
+    <nav class="nav nav-light">
+        <ul class="nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link active">Biography</a></li>
+            <li><a href="#" class="nav-link">Albums</a></li>
+            <li><a href="#" class="nav-link">On Tour</a></li>
+            <li><a href="#" class="nav-link">Merch</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECCIÓN BIOGRAFÍA -->
+    <section class="section bio-section">
+        <div class="bio-content">
+            <h3 class="section-subtitle">Biography</h3>
+            <h2 class="section-title">FROM CAGUAS TO THE WORLD</h2>
+            <p class="bio-text">
+                Eladio Carrión, born on November 14, 1994, in Caguas, Puerto Rico, is one of the most influential
+                artists in the new generation of urban music. His passion for music started at a young age, influenced
+                by the sounds of his island and the culture of the streets.
+            </p>
+        </div>
+        <div class="bio-image">
+            <img src="" alt="Eladio Carrión">
+        </div>
+        <div class="bio-info">
+            <div class="info-group">
+                <h4>Born</h4>
+                <p>November 14, 1994<br>Caguas, Puerto Rico</p>
+            </div>
+            <div class="info-group">
+                <h4>Genre</h4>
+                <p>Trap / Reggaeton / Latino Urban</p>
+            </div>
+            <div class="info-group">
+                <h4>Label</h4>
+                <p>Rimas Entertainment</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAVEGACIÓN OSCURA -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Biography</a></li>
+            <li><a href="#" class="nav-link active">Albums</a></li>
+            <li><a href="#" class="nav-link">On Tour</a></li>
+            <li><a href="#" class="nav-link">Merch</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECCIÓN DISCOGRAFÍA -->
+    <section class="section discography">
+        <h2 class="section-title text-light">DISCOGRAPHY</h2>
+        <div class="discography-container">
+
+            <!-- Rejilla de Tarjetas con Flexbox -->
+            <div class="cards-wrapper">
+                <div class="card">
+                    <div class="card-image" style="background-image: url('pic1.jpg');"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">SEN2 KBRN</h4>
+                        <p class="card-date">November 17, 2021</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image" style="background-image: url('pic2.jpg');"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Sol Maria</h4>
+                        <p class="card-date">January 19, 2024</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image" style="background-image: url('pic3.jpg');"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Sauce Boyz - EP</h4>
+                        <p class="card-date">May 1, 2020</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image" style="background-image: url('pic4.jpg');"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">3MEN2 KBRN</h4>
+                        <p class="card-date">March 17, 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Álbum Destacado -->
+            <div class="featured-card">
+                <div class="featured-overlay"></div>
+                <div class="featured-body">
+                    <h2>CORSA</h2>
+                    <p>Stream now the latest explosive release featuring all new hits and massive collaborations.</p>
+                    <button class="btn btn-light">Listen Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN TRACKLIST -->
+    <section class="section tracklist-section">
+        <div class="tracklist-header">
+            <h2>CORSA</h2>
+            <p>Check all official tracks and lyrics directly from the latest album release.</p>
+        </div>
+        <div class="tracklist-content">
+            <ul class="track-list">
+                <li class="track-item"><span>1. Intro</span> <span>2:35</span></li>
+                <li class="track-item"><span>2. Ricky Bobby</span> <span>2:05</span></li>
+                <li class="track-item"><span>3. Os Cobahias</span> <span>3:10</span></li>
+                <li class="track-item"><span>4. Baby Cfn.</span> <span>2:45</span></li>
+                <li class="track-item"><span>5. Polaroid</span> <span>2:50</span></li>
+                <li class="track-item"><span>6. Babeletta</span> <span>2:15</span></li>
+                <li class="track-item"><span>7. Inpredecible</span> <span>2:40</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECCIÓN TOUR -->
+    <section class="section tour-section">
+        <h3 class="section-subtitle">On Tour</h3>
+        <h2 class="section-title">UPCOMING DATES</h2>
+        <div class="tour-container">
+            <div class="tour-list">
+                <div class="tour-item">
+                    <div class="tour-info">
+                        <span class="tour-date">NOV 14</span>
+                        <div class="tour-location">
+                            <h4>Madrid, Spain</h4>
+                            <p>Wizink Center</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark btn-sm">Buy Tickets</button>
+                </div>
+
+                <div class="tour-item">
+                    <div class="tour-info">
+                        <span class="tour-date">NOV 20</span>
+                        <div class="tour-location">
+                            <h4>Barcelona, Spain</h4>
+                            <p>Palau Sant Jordi</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark btn-sm">Buy Tickets</button>
+                </div>
+
+                <div class="tour-item">
+                    <div class="tour-info">
+                        <span class="tour-date">DEC 05</span>
+                        <div class="tour-location">
+                            <h4>Buenos Aires, Argentina</h4>
+                            <p>Movistar Arena</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark btn-sm">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="tour-map">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg"
+                    alt="Mapa de gira">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN TIENDA / MERCH -->
+    <section class="section store-section">
+        <h2 class="section-title text-light">OFFICIAL STORE</h2>
+        <div class="store-grid">
+            <div class="product-card">
+                <img src="pic1.jpg" alt="Producto 1">
+                <div class="product-info">
+                    <h4>T-Shirt VC</h4>
+                    <p>$35.00</p>
+                </div>
+                <button class="btn btn-dark btn-full">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="pic2.jpg" alt="Producto 2">
+                <div class="product-info">
+                    <h4>Hoodie Black Edition</h4>
+                    <p>$65.00</p>
+                </div>
+                <button class="btn btn-dark btn-full">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="pic3.jpg" alt="Producto 3">
+                <div class="product-info">
+                    <h4>Vinyl Album Corsa</h4>
+                    <p>$40.00</p>
+                </div>
+                <button class="btn btn-dark btn-full">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section class="section contact-section">
+        <form class="contact-form">
+            <h3>LET'S CONNECT</h3>
+            <input type="text" placeholder="NAME" required>
+            <input type="email" placeholder="EMAIL" required>
+            <textarea placeholder="MESSAGE" required></textarea>
+            <button type="submit" class="btn btn-dark">Send Message</button>
+        </form>
+        <div class="contact-details">
+            <div class="contact-group">
+                <h4>Management</h4>
+                <p>management@eladiocarrion.com</p>
+            </div>
+            <div class="contact-group">
+                <h4>Press</h4>
+                <p>press@eladiocarrion.com</p>
+            </div>
+            <div class="contact-group">
+                <h4>Booking</h4>
+                <p>booking@eladiocarrion.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>&copy; 2026 Eladio Carrión. All rights reserved.</p>
+        <p>MUSIC. CULTURE. REAL.</p>
+    </footer>
+
 </body>
+
 </html>

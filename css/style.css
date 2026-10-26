@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ==========================================
+   RESET Y ESTILOS GENERALES
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ==========================================
+   COMPONENTES REUTILIZABLES (BOTONES Y SECCIONES)
+   ========================================== */
+.section {
+  display: flex;
+  padding: 60px 10%;
+}
+
+.section-title {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+/* Botones con Flexbox */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-light:hover {
+  background-color: #dddddd;
+}
+
+.btn-dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: #333333;
+}
+
+.btn-sm {
+  padding: 6px 14px;
+  font-size: 0.65rem;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* ==========================================
+   NAVEGACIÓN (FLEXBOX)
+   ========================================== */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+  width: 100%;
+}
+
+.nav-light {
+  background-color: #ffffff;
+}
+
+.nav-light .nav-link {
+  color: #666666;
+}
+
+.nav-light .nav-link:hover,
+.nav-light .nav-link.active {
+  color: #000000;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff;
+}
+
+.search-icon {
+  position: absolute;
+  right: 40px;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+
+/* ==========================================
+   SECCIÓN HERO
+   ========================================== */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  min-height: 600px;
+  background: url('pic1.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  padding: 60px 10%;
+  max-width: 600px;
+}
+
+.hero-content .subtitle {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.hero-content .slogan {
+  font-size: 0.85rem;
+  letter-spacing: 4px;
+  color: #aaaaaa;
+  margin-bottom: 25px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  padding: 0 10% 40px 10%;
+  z-index: 2;
+  font-size: 1.2rem;
+}
+
+/* ==========================================
+   SECCIÓN BIOGRAFÍA
+   ========================================== */
+.bio-section {
+  background-color: #ffffff;
+  color: #000000;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.bio-content,
+.bio-image,
+.bio-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.bio-content {
+  gap: 15px;
+}
+
+.bio-text {
+  font-size: 0.85rem;
+  color: #444444;
+  line-height: 1.8;
+}
+
+.bio-image {
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-image img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.bio-info {
+  justify-content: center;
+  gap: 25px;
+}
+
+.info-group h4 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888888;
+  margin-bottom: 4px;
+}
+
+.info-group p {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* ==========================================
+   SECCIÓN DISCOGRAFÍA (TARJETAS ESTILO styleA)
+   ========================================== */
+.discography {
+  flex-direction: column;
+  background-color: #0a0a0a;
+  gap: 30px;
+}
+
+.discography-container {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+}
+
+/* Tarjeta interactiva con Flexbox */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px);
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 240px;
+  cursor: pointer;
+  transition: height 0.5s ease;
+}
+
+.card:hover {
+  height: 320px;
+}
+
+.card-image {
+  display: flex;
+  width: 100%;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.card-title::before {
+  content: "··· ";
+  color: #666666;
+}
+
+.card-title::after {
+  content: " ···";
+  color: #666666;
+}
+
+.card-date {
+  font-size: 0.75rem;
+  color: #666666;
+}
+
+/* Álbum Destacado */
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+  background: url('pic2.jpg') center/cover no-repeat;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+}
+
+.featured-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  gap: 10px;
+}
+
+.featured-body h2 {
+  font-size: 2.5rem;
+}
+
+.featured-body p {
+  font-size: 0.8rem;
+  color: #aaaaaa;
+}
+
+/* ==========================================
+   SECCIÓN TRACKLIST
+   ========================================== */
+.tracklist-section {
+  background-color: #ffffff;
+  color: #000000;
+  gap: 50px;
+}
+
+.tracklist-header,
+.tracklist-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tracklist-header {
+  justify-content: center;
+}
+
+.tracklist-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tracklist-header p {
+  font-size: 0.8rem;
+  color: #666666;
+}
+
+.track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.track-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 8px;
+}
+
+/* ==========================================
+   SECCIÓN TOUR
+   ========================================== */
+.tour-section {
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.tour-container {
+  display: flex;
+  gap: 40px;
+}
+
+.tour-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tour-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.tour-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tour-date {
+  font-weight: 700;
+  font-size: 0.85rem;
+  width: 50px;
+}
+
+.tour-location h4 {
+  font-size: 0.85rem;
+}
+
+.tour-location p {
+  font-size: 0.7rem;
+  color: #666666;
+}
+
+.tour-map {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.tour-map img {
+  max-width: 100%;
+  opacity: 0.6;
+}
+
+/* ==========================================
+   SECCIÓN TIENDA
+   ========================================== */
+.store-section {
+  flex-direction: column;
+  background-color: #000000;
+  gap: 30px;
+}
+
+.store-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 15px;
+  gap: 15px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+.product-info h4 {
+  font-size: 0.85rem;
+}
+
+.product-info p {
+  font-size: 0.75rem;
+  color: #666666;
+}
+
+/* ==========================================
+   SECCIÓN CONTACTO Y FOOTER
+   ========================================== */
+.contact-section {
+  background-color: #ffffff;
+  color: #000000;
+  gap: 50px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 15px;
+}
+
+.contact-form h3 {
+  font-size: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  background-color: #f9f9f9;
+  font-size: 0.8rem;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 20px;
+}
+
+.contact-group h4 {
+  font-size: 0.75rem;
+  color: #888888;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.contact-group p {
+  font-size: 0.85rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 10%;
+  font-size: 0.75rem;
+}
