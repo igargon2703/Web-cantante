@@ -16,12 +16,12 @@
     <!-- NAVEGACIÓN PRINCIPAL -->
     <nav class="nav">
         <ul class="nav-list">
-            <li><a href="#" class="nav-link active">Home</a></li>
-            <li><a href="#" class="nav-link">Biography</a></li>
-            <li><a href="#" class="nav-link">Albums</a></li>
-            <li><a href="#" class="nav-link">On Tour</a></li>
-            <li><a href="#" class="nav-link">Merch</a></li>
-            <li><a href="#" class="nav-link">Contact</a></li>
+            <li><a href="#HOME" class="nav-link active">Home</a></li>
+            <li><a href="#Biography" class="nav-link">Biography</a></li>
+            <li><a href="#Albums" class="nav-link">Albums</a></li>
+            <li><a href="#On Tour" class="nav-link">On Tour</a></li>
+            <li><a href="#Merch" class="nav-link">Merch</a></li>
+            <li><a href="#Contact" class="nav-link">Contact</a></li>
         </ul>
         <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
     </nav>
@@ -29,17 +29,24 @@
     <!-- SECCIÓN HERO -->
     <header class="hero">
         <div class="hero-overlay"></div>
+
+        <!-- Todo va dentro de .hero-content para que se apile ordenadamente -->
         <div class="hero-content">
-            <p class="subtitle">Él te puede cantar, te puede boxear.</p>
-            <h1>ELADIO CARRIÓN</h1>
+            <p class="subtitle">Si lo puedes soñar, lo puedes hacer.</p>
+            <h1>ELADIO<br>CARRIÓN</h1>
             <p class="slogan">MUSIC. CULTURE. REAL.</p>
-            <button class="btn btn-light">Listen Now <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-        <div class="social-links">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-spotify"></i></a>
-            <a href="#"><i class="fa-brands fa-apple"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+            <button class="btn btn-light">
+                LISTEN NOW <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <!-- Los iconos ahora están aquí adentro, justo debajo del botón -->
+            <div class="social-links">
+                <a href="https://www.instagram.com/eladiocarrion/"><img src="img/instaBlanco.png" alt="Instagram"></a>
+                <a href="https://open.spotify.com/intl-es/artist/5XJDexmWFLWOkjOEjOVX3e"><img src="img/spoty.png" alt="Spotify"></a>
+                <a href="https://x.com/eladio_carrion"><img src="img/x.png" alt="X"></a>
+                <a href="https://www.youtube.com/@EladioCarrion/videos"><img src="img/youtubeBlancoTransparente.png" alt="YouTube"></a>
+            </div>
         </div>
     </header>
 
@@ -56,19 +63,29 @@
     </nav>
 
     <!-- SECCIÓN BIOGRAFÍA -->
-    <section class="section bio-section">
+    <section class="bio-section">
+        <!-- Columna Texto 1 -->
         <div class="bio-content">
             <h3 class="section-subtitle">Biography</h3>
             <h2 class="section-title">FROM CAGUAS TO THE WORLD</h2>
             <p class="bio-text">
                 Eladio Carrión, born on November 14, 1994, in Caguas, Puerto Rico, is one of the most influential
-                artists in the new generation of urban music. His passion for music started at a young age, influenced
-                by the sounds of his island and the culture of the streets.
+                artists in the new generation of urban music.
+                His passion for music started at a young age, influenced by the sounds of his island and the culture of
+                the streets. With a unique style and versatility, he has managed to build a solid career as a rapper,
+                songwriter and producer.
+                Today, Eladio continues to break barriers, combining trap, reggaeton and Latin sounds, becoming a global
+                reference in the urban scene.
             </p>
         </div>
+
+        <!-- Columna Imagen Centrada -->
         <div class="bio-image">
-            <img src="" alt="Eladio Carrión">
+            <img src="img/eladio.jpg" alt="Eladio Carrión">
+            <span class="bio-signature">ELADIO CARRIÓN</span>
         </div>
+
+        <!-- Columna Texto 2 (Detalles) -->
         <div class="bio-info">
             <div class="info-group">
                 <h4>Born</h4>
