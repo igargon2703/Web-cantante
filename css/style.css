@@ -340,7 +340,7 @@ ul {
 }
 
 /* ==========================================
-   SECCIÓN DISCOGRAFÍA (TARJETAS ESTILO styleA)
+   SECCIÓN DISCOGRAFÍA
    ========================================== */
 .discography {
   width: 100%;
@@ -368,9 +368,8 @@ ul {
   display: flex;
   flex-direction: column;
   width: calc(50% - 10px);
-  background-color: #ffffff;
+  background-color: #0a0a0a;
   color: #000000;
-  border-radius: 25px;
   overflow: hidden;
   height: auto;
 }
@@ -382,20 +381,16 @@ ul {
 .card-image {
   display: flex;
   width: 100%;
-  /* Cambiamos de una altura fija recortada a una proporción automática o fija limpia */
-  height: 220px;
-  /* Usamos 'contain' en lugar de 'cover' para que la foto se vea entera sin recortarse */
+  height: 250px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  background-color: #000000; /* Fondo negro elegante por si la proporción deja márgenes */
+  background-position: left;
 }
 
 .card-body {
   display: flex;
   flex-direction: column;
   padding: 15px;
-  background-color: #505050;
 }
 
 .card-title {
@@ -418,7 +413,7 @@ ul {
   flex: 1;
   background: url("../img/album3.png") center/cover no-repeat;
   padding: 30px;
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   overflow: hidden;
 }
@@ -649,6 +644,8 @@ ul {
    SECCIÓN TIENDA
    ========================================== */
 .store-section {
+  width: 100%;
+  height: 100vh;
   flex-direction: column;
   background-color: #000000;
   gap: 30px;
@@ -673,7 +670,7 @@ ul {
 
 .product-card img {
   width: 100%;
-  height: 200px;
+  height: 400px;
   object-fit: cover;
 }
 
