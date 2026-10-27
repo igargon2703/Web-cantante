@@ -27,7 +27,7 @@
     </nav>
 
     <!-- SECCIÓN HERO -->
-    <header class="hero">
+    <header class="hero" id="Home">
         <div class="hero-overlay"></div>
 
         <!-- Todo va dentro de .hero-content para que se apile ordenadamente -->
@@ -65,7 +65,7 @@
     </nav>
 
     <!-- SECCIÓN BIOGRAFÍA -->
-    <section class="bio-section">
+    <section class="bio-section" id="Biography">
         <!-- Columna Izquierda -->
         <div class="bio-content">
             <h3 class="section-subtitle">BIOGRAPHY</h3>
@@ -117,7 +117,7 @@
     </nav>
 
     <!-- SECCIÓN DISCOGRAFÍA -->
-    <section class="section discography">
+    <section class="section discography" id="Albums">
         <h3 class="section-subtitle">Albums</h3>
         <h2 class="section-title text-light">DISCOGRAPHY</h2>
         <div class="discography-container">
@@ -219,8 +219,8 @@
             <div class="video-row">
                 <div class="video-thumbnail-container">
                     <!-- Usamos un iframe limpio de YouTube con el enlace embed -->
-                    <iframe src="https://www.youtube.com/embed/aLVwW5ViWbM"
-                        title="Ricky Bobby - Official Music Video" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/aLVwW5ViWbM" title="Ricky Bobby - Official Music Video"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                     </iframe>
@@ -228,16 +228,16 @@
                 <div class="video-info">
                     <h3>Ricky Bobby</h3>
                     <p>Official Music Video</p>
-                    <a href="https://www.youtube.com/embed/aLVwW5ViWbM"
-                        target="_blank" class="watch-link">Watch on Youtube</a>
+                    <a href="https://www.youtube.com/embed/aLVwW5ViWbM" target="_blank" class="watch-link">Watch on
+                        Youtube</a>
                 </div>
             </div>
 
             <!-- Video 2: Polaroid -->
             <div class="video-row">
                 <div class="video-thumbnail-container">
-                    <iframe src="https://www.youtube.com/embed/9KH0lpEM8vE"
-                        title="Polaroid - Official Music Video" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/9KH0lpEM8vE" title="Polaroid - Official Music Video"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                     </iframe>
@@ -245,16 +245,16 @@
                 <div class="video-info">
                     <h3>Polaroid</h3>
                     <p>Official Music Video</p>
-                    <a href="https://www.youtube.com/embed/9KH0lpEM8vE"
-                        target="_blank" class="watch-link">Watch on Youtube</a>
+                    <a href="https://www.youtube.com/embed/9KH0lpEM8vE" target="_blank" class="watch-link">Watch on
+                        Youtube</a>
                 </div>
             </div>
 
             <!-- Video 3: Body -->
             <div class="video-row">
                 <div class="video-thumbnail-container">
-                    <iframe src="https://www.youtube.com/embed/ql3pTI8hVFw"
-                        title="Body - Official Music Video" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/ql3pTI8hVFw" title="Body - Official Music Video"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                     </iframe>
@@ -262,8 +262,8 @@
                 <div class="video-info">
                     <h3>Body</h3>
                     <p>Official Music Video</p>
-                    <a href="https://www.youtube.com/embed/ql3pTI8hVFw"
-                        target="_blank" class="watch-link">Watch on Youtube</a>
+                    <a href="https://www.youtube.com/embed/ql3pTI8hVFw" target="_blank" class="watch-link">Watch on
+                        Youtube</a>
                 </div>
             </div>
 
@@ -271,7 +271,17 @@
     </section>
 
     <!-- SECCIÓN TOUR -->
-    <section class="section tour-section">
+    <nav class="nav nav-light">
+        <ul class="nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Biography</a></li>
+            <li><a href="#" class="nav-link">Albums</a></li>
+            <li><a href="#" class="nav-link active">On Tour</a></li>
+            <li><a href="#" class="nav-link">Merch</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="section tour-section" id="On Tour">
         <h3 class="section-subtitle">On Tour</h3>
         <h2 class="section-title">UPCOMING DATES</h2>
         <div class="tour-container">
@@ -308,16 +318,49 @@
                     </div>
                     <button class="btn btn-dark btn-sm">Buy Tickets</button>
                 </div>
+
+                <div class="tour-item">
+                    <div class="tour-info">
+                        <span class="tour-date">July 28</span>
+                        <div class="tour-location">
+                            <h4>Munich, Germany</h4>
+                            <p>Allianz Arena (Múnich)</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark btn-sm">Buy Tickets</button>
+                </div>
+
+                <div class="tour-item">
+                    <div class="tour-info">
+                        <span class="tour-date">June 22</span>
+                        <div class="tour-location">
+                            <h4>London, United Kingdom</h4>
+                            <p>Wembley Stadium</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark btn-sm">Buy Tickets</button>
+                </div>
+
+                <div class="tour-item">
+                    <div class="tour-info">
+                        <span class="tour-date">OCT 23</span>
+                        <div class="tour-location">
+                            <h4>Bogotá, Colombia</h4>
+                            <p>Estadio El Campín</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark btn-sm">Buy Tickets</button>
+                </div>
             </div>
             <div class="tour-map">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg"
+                <img src="img/mapaNegroTransparente.png"
                     alt="Mapa de gira">
             </div>
         </div>
     </section>
 
     <!-- SECCIÓN TIENDA / MERCH -->
-    <section class="section store-section">
+    <section class="section store-section" id="Merch">
         <h2 class="section-title text-light">OFFICIAL STORE</h2>
         <div class="store-grid">
             <div class="product-card">
@@ -350,13 +393,13 @@
     </section>
 
     <!-- SECCIÓN CONTACTO -->
-    <section class="section contact-section">
-        <form class="contact-form">
-            <h3>LET'S CONNECT</h3>
-            <input type="text" placeholder="NAME" required>
-            <input type="email" placeholder="EMAIL" required>
-            <textarea placeholder="MESSAGE" required></textarea>
-            <button type="submit" class="btn btn-dark">Send Message</button>
+    <section class="section contact-section" id="Contact>
+        <form class=" contact-form">
+        <h3>LET'S CONNECT</h3>
+        <input type="text" placeholder="NAME" required>
+        <input type="email" placeholder="EMAIL" required>
+        <textarea placeholder="MESSAGE" required></textarea>
+        <button type="submit" class="btn btn-dark">Send Message</button>
         </form>
         <div class="contact-details">
             <div class="contact-group">
