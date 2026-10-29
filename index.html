@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eladio Carrión - Web Oficial</title>
-    <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Hoja de estilos CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -412,34 +410,101 @@
     </section>
 
     <!-- SECCIÓN CONTACTO -->
-    <section class="section contact-section" id="Contact>
-        <form class=" contact-form">
-        <h3>LET'S CONNECT</h3>
-        <input type="text" placeholder="NAME" required>
-        <input type="email" placeholder="EMAIL" required>
-        <textarea placeholder="MESSAGE" required></textarea>
-        <button type="submit" class="btn btn-dark">Send Message</button>
-        </form>
-        <div class="contact-details">
-            <div class="contact-group">
-                <h4>Management</h4>
-                <p>management@eladiocarrion.com</p>
+    <nav class="nav nav-light">
+        <ul class="nav-list">
+            <li><a href="#HOME" class="nav-link">Home</a></li>
+            <li><a href="#Biography" class="nav-link">Biography</a></li>
+            <li><a href="#Albums" class="nav-link">Albums</a></li>
+            <li><a href="#On Tour" class="nav-link">On Tour</a></li>
+            <li><a href="#Merch" class="nav-link">Merch</a></li>
+            <li><a href="#Contact" class="nav-link active">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="contact-section" id="Contact">
+        <div class="contact-container">
+
+            <!-- Columna Izquierda: Formulario -->
+            <div class="contact-form-col">
+                <span class="contact-tag">CONTACT</span>
+                <h2 class="contact-title">LET´S CONNECT</h2>
+
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="Your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+                    </div>
+                </form>
             </div>
-            <div class="contact-group">
-                <h4>Press</h4>
-                <p>press@eladiocarrion.com</p>
-            </div>
-            <div class="contact-group">
-                <h4>Booking</h4>
-                <p>booking@eladiocarrion.com</p>
+
+            <!-- Divisor vertical -->
+            <div class="contact-divider"></div>
+
+            <!-- Columna Derecha: Información de contacto -->
+            <div class="contact-info-col">
+                <h3 class="info-subtitle">OTHER WAYS TO REACH ME</h3>
+
+                <div class="info-list">
+                    <!-- Management -->
+                    <div class="info-item">
+                        <!-- Icono de teléfono -->
+                        <img src="img/telefono.png" alt="Management Icon" class="info-icon">
+                        <div class="info-text">
+                            <strong>Management</strong>
+                            <a href="mailto:info@eladiocarrion.com">info@eladiocarrion.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Press -->
+                    <div class="info-item">
+                        <!-- Icono de sobre -->
+                        <img src="img/correo.png" alt="Press Icon" class="info-icon">
+                        <div class="info-text">
+                            <strong>Press</strong>
+                            <a href="mailto:press@eladiocarrion.com">press@eladiocarrion.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Booking -->
+                    <div class="info-item">
+                        <img src="img/emailTransparenteNegro.png" alt="Booking Icon" class="info-icon">
+                        <div class="info-text">
+                            <strong>Booking</strong>
+                            <a href="mailto:booking@eladiocarrion.com">booking@eladiocarrion.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="follow-container">
+                    <h4 class="follow-title">FOLLOW ME</h4>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/eladiocarrion/"><img src="img/insta2.png" alt="Instagram"></a>
+                    <a href="https://open.spotify.com/intl-es/artist/5XJDexmWFLWOkjOEjOVX3e"><img
+                            src="img/spotyTransparenteNegro.png" alt="Spotify"></a>
+                    <a href="https://x.com/eladio_carrion"><img src="img/xNegro.png" alt="X"></a>
+                    <a href="https://www.youtube.com/@EladioCarrion/videos"><img src="img/youtubeTransparente.png"
+                            alt="YouTube"></a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- PIE DE PÁGINA -->
-    <footer class="footer">
-        <p>&copy; 2026 Eladio Carrión. All rights reserved.</p>
-        <p>MUSIC. CULTURE. REAL.</p>
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <span class="footer-brand">ELADIO CARRIÓN</span>
+            <span class="footer-slogan">MUSIC. CULTURE. REAL.</span>
+        </div>
     </footer>
 
 </body>
