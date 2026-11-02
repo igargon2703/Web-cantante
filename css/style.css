@@ -57,7 +57,7 @@ ul {
   color: #ffffff;
 }
 
-/* Botones con Flexbox */
+/* Botones */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -311,6 +311,7 @@ ul {
   color: rgba(255, 244, 244, 0.75);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   letter-spacing: 3px;
+  transform: rotate(-10deg);
 }
 
 /* Detalles de la derecha */
